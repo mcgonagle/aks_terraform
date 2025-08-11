@@ -26,10 +26,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: tenable/terrascan-action@main
-          name: Run Terrascan
-          id: terrascan
-          with:
-            iac_type: 'terraform'
-            iac_version: 'v14'
-            policy_type: 'azure'
-            only_warn: true
+        name: Run Terrascan
+        id: terrascan
+        with:
+          iac_type: 'terraform'
+          iac_version: 'v14'
+          policy_type: 'azure'
+          only_warn: true
